@@ -1,7 +1,7 @@
 <h1>POSTS</h1>
 
 <ul class="list-group">
-    <li *ngFor="let mensaje of mensajes" class="list-group-item">
+    <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
         <h2>{{mensaje.title}}</h2>
         <p>
             {{mensaje.body}}
